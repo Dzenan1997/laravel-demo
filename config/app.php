@@ -187,6 +187,21 @@ return [
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
+    'debug_blacklist' => [
+        '_ENV' => [
+            'APP_KEY',
+            'DB_PASSWORD',
+        ],
+
+        '_SERVER' => [
+            'APP_KEY',
+            'DB_PASSWORD',
+        ],
+
+        '_POST' => [
+            'password',
+        ],
+    ],
 
     'aliases' => [
 
